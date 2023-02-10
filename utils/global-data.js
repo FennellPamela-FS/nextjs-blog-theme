@@ -7,7 +7,7 @@ export const getGlobalData = () => {
     : 'Authors';
   const footerText = process.env.BLOG_FOOTER_TEXT
     ? decodeURI(process.env.BLOG_FOOTER_TEXT)
-    : '&copy; 2023 authors.mytCreative.com. All rights reserved.';
+    : '2023 © All rights reserved.';
 
   return {
     name,
