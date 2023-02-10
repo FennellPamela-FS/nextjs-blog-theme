@@ -1,6 +1,8 @@
 import React from 'react'
 
-export const DigitalAuditWidget = () => {
+import React from 'react'
+
+export default function DigitalAuditWidget() {
     return (
         <div>
             <h1>DigitalAuditWidget</h1>
