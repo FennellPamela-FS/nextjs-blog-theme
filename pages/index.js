@@ -4,12 +4,13 @@ import { getPosts } from '../utils/mdx-utils';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
-import ArrowIcon from '../components/ArrowIcon';
+// import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 import DigitalAuditWidget from '../components/DigitalAuditWidget';
 
-export default function Index({ posts, globalData }) {
+// export default function Index({ posts, globalData }) {
+export default function Index({ globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
@@ -19,6 +20,7 @@ export default function Index({ posts, globalData }) {
           {globalData.blogTitle}
         </h1>
         <DigitalAuditWidget className="mb-12" />
+        {/* 
         <ul className="w-full">
           {posts.map((post) => (
             <li
@@ -47,6 +49,7 @@ export default function Index({ posts, globalData }) {
             </li>
           ))}
         </ul>
+         */}
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
